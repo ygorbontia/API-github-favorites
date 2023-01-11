@@ -115,9 +115,13 @@ nav {
   fill: var(--fc-button-hover);
 }
 
+.border-table {
+  border-radius: 1.2rem;
+  border: solid 1px var(--bc-table);
+}
+
 table {
   max-height: 688px;
-  border: solid 1px var(--bc-table);
   border-radius: 1.2rem; 
   border-collapse: collapse;
 
@@ -138,6 +142,7 @@ thead th {
 
 thead th:nth-child(1) {
   width: 50.4rem;
+  border-top-left-radius: 1.2rem;
 }
 
 thead th:nth-child(2) {
@@ -150,6 +155,7 @@ thead th:nth-child(3) {
 
 thead th:nth-child(4) {
   width: 17.8rem;
+  border-top-right-radius: 1.2rem;
 }
 
 tbody tr {
@@ -166,6 +172,14 @@ tbody tr:nth-child(even) {
 
 tbody tr:last-child {
   border-bottom: none;
+}
+
+tbody td:nth-child(1) {
+  border-bottom-left-radius: 1.2rem;
+}
+
+tbody tr:last-child td:nth-child(4) {
+  border-bottom-right-radius: 1.2rem;
 }
 
 tbody td {
